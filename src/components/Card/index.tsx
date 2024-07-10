@@ -4,9 +4,9 @@ import Link from "next/link"
 
 const Card = ({ product }: { product: Product }) => {
   return (
-    <div className="card bg-base-100 w-96 shadow-xl">
+    <div className="card bg-base-100 sm:w-96 w-80 shadow-xl">
       <Link href={`/${product.id}`}>
-        <figure className="w-96 h-40 overflow-hidden">
+        <figure className="sm:w-96 w-80 h-40 overflow-hidden">
           <Image
             src={product.images[0]}
             alt={product.name}
